@@ -11,6 +11,7 @@
     padding: 2rem;
     border-width: 0.5rem;
     border-color: black;
+    border-radius: 1rem;
 }
 
 .code {
