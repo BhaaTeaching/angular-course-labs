@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.border-style {
+    border-style: ridge;
+    padding: 2rem;
+    border-width: 0.5rem;
+    border-color: black;
+}
+
+.code {
+    padding: 2.5rem;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
