@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Dicee</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
-  </head>
-  <body onload="setFoter()">
+</head>
+
+<body onload="setFoter()">
     <header>Lab2 - Calculator App</header>
     <div class="sys-style">
-     <div class="calculator">
-        <div class="result" aria-placeholder=";lm"></div>
-        <input id="first-number" type="number"/>
-        <div class="sign">
-            <button id="add" onclick="OnSignChoose('+')">+</button>
-            <button id="sub" onclick="OnSignChoose('-')">-</button>
-            <button id="multi" onclick="OnSignChoose('*')">*</button>
-            <button id="div" onclick="OnSignChoose('/')">/</button>
+        <div class="with-history">
+
+            <div class="calculator">
+                <div class="result"></div>
+                <input id="first-number" type="number" />
+                <div class="sign">
+                    <button id="add" onclick="OnSignChoose('+')">+</button>
+                    <button id="sub" onclick="OnSignChoose('-')">-</button>
+                    <button id="multi" onclick="OnSignChoose('*')">*</button>
+                    <button id="div" onclick="OnSignChoose('/')">/</button>
+                </div>
+                <input id="second-number" type="number" />
+            </div>
+            <div class="history"></div>
         </div>
-        <input id="second-number" type="number"/>
-     </div>
+
     </div>
 
-      <footer id="footer-style">
-        Calculater @ 
-      </footer>
+    <footer id="footer-style">
+        Calculater @
+    </footer>
 
-      <script src="index.js", type="text/javascript"></script>
-    </html>
+    <script src="index.js" , type="text/javascript"></script>
+
+</html>
