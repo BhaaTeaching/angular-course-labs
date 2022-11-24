@@ -1,0 +1,13 @@
+<div class="user-container">
+  <div class="text-style" [ngStyle]="lightMode()" >
+    <p>users works!</p>
+    <div class="p-container">
+      <p *ngFor="let x of names; let i =index">{{x}}</p>
+    </div>
+  </div>
+  <div class="buttons-style">
+    <button (click)="turnOnLightMode()">Turn Light mode on</button>
+    <button (click)="turnOnDarkMode()">Turn Dark mode on</button>
+  </div>
+</div>
+
