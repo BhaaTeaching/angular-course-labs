@@ -1,0 +1,10 @@
+<p>image works!</p>
+<div class="container">
+  <label>Click checkbox to see image</label>
+  <input type="checkbox" (change)="openSeaImage($event)"/>
+  <img [ngClass]="imgClassName"
+       *ngIf="seaImage !== ''"
+       [src]="seaImage"
+       alt="sea-image"/>
+</div>
+
