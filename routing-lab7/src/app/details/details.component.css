@@ -1,0 +1,21 @@
+img {
+  width: 3rem;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: solid;
+}
+
+.size-container {
+  padding: 0.5rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin-top: 0.5rem;
+  text-align: center;
+}

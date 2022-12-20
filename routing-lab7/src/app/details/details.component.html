@@ -1,0 +1,8 @@
+<div *ngFor="let item of items" class="details-container">
+  <div>
+    <div>Price: {{item?.price}} ₪</div>
+    <div>size: <span class="size-container" *ngFor="let x of item.size">{{x}}</span></div>
+    <button (click)="itemService.addToBag()"[disabled]="!item?.inStock" >ADD TO BAG</button> <span [ngStyle]="{color : 'red'}" *ngIf="!item?.inStock"> Out Of Stock</span>
+  </div>
+  <img [src]="item?.imageUrl"/>
+</div>
